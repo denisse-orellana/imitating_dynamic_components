@@ -2,6 +2,15 @@
 
 This projects imitates the dynamic components of Bootstrap 4 with jQuery.
 
+## Table of Contents
+
+* [Ruby & Rails version](#ruby---rails-version)
+* [Adding jQuery to the Rails project](#adding-jquery-to-the-rails-project)
+* [Imitating Bootstrap 4](#imitating-bootstrap-4)
+    + [1. Alert Dismissing](#1-alert-dismissing)
+    + [2. Collapse](#2-collapse)
+    + [3. Collapse Accordion](#3-collapse-accordion)
+
 ## Ruby & Rails version
 
 ```ruby
@@ -84,8 +93,6 @@ $('#headingThree').click(function(e) {
 
 Other way to imitate this component is with the next function:
 
-The **```.data()```** will attach data of any type to DOM elements. While  **```.is()```** check the element against jQuery objects and will return *true* if at least one of these elements matches the given arguments. Finally **```.slideToggle()```** will hide the matched elements with a sliding motion.
-
 ```javascript
 $('.collapsed').click(function(e) {
     let target = $($(this).data('target'));
@@ -97,3 +104,5 @@ $('.collapsed').click(function(e) {
     }
 })
 ```
+
+The **```.data()```** will attach data of any type to DOM elements. While  **```.is()```** check the element against jQuery objects and will return *true* if at least one of these elements matches the given arguments. Finally, **```.slideToggle()```** will hide the matched elements with a sliding motion.
